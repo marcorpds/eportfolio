@@ -15,30 +15,3 @@
     color: $ink;
   }
 }
-
-.view-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  color: $muted;
-  font-size: 0.86rem;
-  font-weight: 800;
-  line-height: 1;
-  transform: translateZ(0) scale(1);
-  transform-origin: center;
-  transition:
-    color 160ms ease,
-    transform 160ms ease;
-  will-change: transform;
-
-  svg {
-    display: block;
-    flex: 0 0 auto;
-  }
-
-  &:hover,
-  &:focus-visible {
-    color: $gold-bright;
-    transform: translateZ(0) scale(1.08);
-  }
-}

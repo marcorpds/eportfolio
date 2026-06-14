@@ -1,24 +1,49 @@
-@use '../abstracts/variables' as *;
+@use "../abstracts/variables" as *;
 
 .project-card {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(12rem, 17rem) minmax(0, 1fr);
   gap: 1rem;
   padding: 0.9rem;
   border: 1px solid $line-soft;
   background: rgba(255, 255, 255, 0.025);
+  color: inherit;
+  transform: translateY(0);
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+
+  &:hover,
+  &:focus-visible {
+    border-color: rgba($blue, 0.9);
+    background: rgba($blue, 0.6);
+    box-shadow: 0 1rem 2.25rem rgba(0, 0, 0, 0.18);
+    transform: translateY(-0.12rem);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $gold-bright;
+    outline-offset: 0.25rem;
+  }
 
   &--compact {
-    display: block;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
     padding: 0.65rem;
     text-align: left;
 
     .project-card__media {
+      flex: 0 0 auto;
       min-height: 8.5rem;
       margin-bottom: 0.75rem;
     }
 
     .project-card__body {
+      flex: 1;
       min-height: 12rem;
     }
   }
@@ -38,12 +63,8 @@
 
   .tag-list {
     justify-content: flex-start;
-  }
-
-  .project-card__link {
-    align-self: flex-end;
     margin-top: auto;
-    padding-top: 0.9rem;
+    padding-top: 0.75rem;
   }
 }
 
@@ -68,4 +89,17 @@
   min-height: 12rem;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.archive-panel--certificates {
+  .project-card__media {
+    align-self: start;
+    width: 100%;
+    height: clamp(11rem, 19vw, 13rem);
+    min-height: 0;
+
+    img {
+      min-height: 0;
+    }
+  }
 }

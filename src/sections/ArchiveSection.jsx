@@ -10,11 +10,10 @@ export default function ArchiveSection({ id, eyebrow, title, items }) {
   const hiddenCount = items.length - INITIAL_VISIBLE_ITEMS;
 
   return (
-    <section className="archive-panel" id={id} aria-labelledby={`${id}-title`}>
+    <section className={`archive-panel archive-panel--${id}`} id={id} aria-labelledby={`${id}-title`}>
       <div className="archive-title">
         <div>
-          <p className="eyebrow">{eyebrow}</p>
-          <h2 id={`${id}-title`}>{title}</h2>
+          <h2 className="eyebrow" id={`${id}-title`}>{eyebrow}</h2>
         </div>
         <span>{items.length} in total</span>
       </div>

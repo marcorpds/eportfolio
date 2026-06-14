@@ -8,7 +8,7 @@ const featuredProjects = projects.filter((project) => project.featured).slice(0,
 export default function AboutSection() {
   return (
     <section className="about-panel" id="about" aria-labelledby="about-title">
-      <p className="eyebrow">Hello, I'm</p>
+      <h3>Hello, I'm</h3>
       <h1 id="about-title">Marco Pereira da Silva</h1>
       <h2>BSc Computer Science Student</h2>
       <p className="intro">
@@ -16,6 +16,9 @@ export default function AboutSection() {
         I'm passionate about building efficient, reliable software and working
         on projects that create a real impact.
       </p>
+
+      <div className="section-divider" />
+      <h3>Skills</h3>
       <SkillTicker skills={skills} />
 
       <div className="section-divider" />

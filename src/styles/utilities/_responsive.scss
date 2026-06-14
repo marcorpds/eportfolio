@@ -61,9 +61,26 @@
     grid-template-columns: 1fr;
   }
 
-  .timeline article,
+  .project-card__body {
+    min-height: 13rem;
+  }
+
+  .project-card--compact .project-card__body {
+    min-height: 12rem;
+  }
+
+  .timeline-card,
   .contact-panel {
     grid-template-columns: 1fr;
+  }
+
+  .timeline-card {
+    align-items: stretch;
+    min-height: 14rem;
+  }
+
+  .timeline .timeline-card > div:not(.timeline-actions) {
+    min-height: 8rem;
   }
 
   .timeline-actions {
@@ -73,6 +90,10 @@
 
   .contact-actions {
     justify-content: flex-start;
+  }
+
+  .contact-copy {
+    justify-items: start;
   }
 }
 
@@ -124,7 +145,7 @@
     flex-direction: column;
   }
 
-  .timeline article {
+  .timeline-card {
     padding-right: 0.8rem;
   }
 
