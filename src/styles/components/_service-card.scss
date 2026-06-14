@@ -1,0 +1,32 @@
+@use '../abstracts/variables' as *;
+
+.service-card {
+  min-height: 12rem;
+  padding: 1.35rem 1.1rem;
+  border: 1px solid $line-soft;
+  background: rgba(255, 255, 255, 0.025);
+
+  .service-card__icon {
+    display: inline-grid;
+    place-items: center;
+    height: 2.5rem;
+    color: $gold-bright;
+    line-height: 0;
+
+    svg {
+      display: block;
+    }
+  }
+
+  h4 {
+    margin: 0.65rem 0 0.5rem;
+    color: $gold-bright;
+  }
+
+  p {
+    margin: 0;
+    color: $muted;
+    font-size: 0.86rem;
+    line-height: 1.55;
+  }
+}

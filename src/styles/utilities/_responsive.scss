@@ -1,0 +1,134 @@
+@media (max-width: 900px) {
+  .portfolio-shell {
+    position: relative;
+    grid-template-columns: 1fr;
+    width: min(100% - 1rem, 48rem);
+    padding: 0.5rem 0 1rem;
+  }
+
+  .side-nav,
+  .social-rail {
+    position: static;
+    height: auto;
+    min-height: 0;
+  }
+
+  .side-nav {
+    .brand {
+      min-height: auto;
+      grid-template-columns: auto 1fr;
+      justify-items: start;
+      padding-right: 9rem;
+      text-align: left;
+    }
+
+    nav {
+      display: flex;
+      overflow-x: auto;
+      padding: 0.65rem;
+    }
+  }
+
+  .social-rail {
+    position: absolute;
+    top: 2.3rem;
+    right: 1rem;
+    display: block;
+    height: auto;
+    min-height: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+
+    .rail-line {
+      display: none;
+    }
+
+    div {
+      display: flex;
+      gap: 0.35rem;
+      margin: 0;
+    }
+  }
+
+  .service-grid,
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline article,
+  .contact-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-actions {
+    min-height: 0;
+    align-items: flex-start;
+  }
+
+  .contact-actions {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 520px) {
+  .about-panel,
+  .archive-panel,
+  .experience-panel,
+  .contact-panel {
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .about-panel {
+    padding-inline: 1rem;
+
+    h1 {
+      font-size: clamp(1.65rem, 8vw, 2rem);
+      overflow-wrap: anywhere;
+    }
+
+    .intro {
+      font-size: 0.93rem;
+    }
+  }
+
+  .side-nav nav {
+    scrollbar-width: thin;
+
+    a {
+      flex: 0 0 auto;
+    }
+  }
+
+  .side-nav .brand {
+    padding-right: 8.5rem;
+  }
+
+  .social-rail {
+    top: 2.15rem;
+    right: 0.9rem;
+
+    a {
+      width: 1.85rem;
+    }
+  }
+
+  .archive-title {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .timeline article {
+    padding-right: 0.8rem;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

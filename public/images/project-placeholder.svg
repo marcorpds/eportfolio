@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Project image placeholder</title>
+  <desc id="desc">A simple placeholder image for portfolio cards.</desc>
+  <rect width="960" height="600" fill="#181727"/>
+  <rect x="38" y="38" width="884" height="524" fill="#201f31" stroke="#d6a65d" stroke-opacity="0.55" stroke-width="4"/>
+  <path d="M235 342h490" stroke="#d6a65d" stroke-opacity="0.45" stroke-width="4"/>
+  <path d="M282 257l-64 49 64 49M678 257l64 49-64 49M530 220l-100 172" stroke="#f0c47a" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="480" y="468" fill="#b8b1ad" font-family="Arial, sans-serif" font-size="36" text-anchor="middle">Replace with your image</text>
+</svg>
