@@ -163,7 +163,7 @@ export const projects = [
       "MariaDB",
       "REST API",
       "Database Design",
-      "Full Stack Development",
+      "Full-Stack Development",
     ],
     image: `${dataBase}images/TravelJabs Clinics Management System Image.jpg`,
     link: `${dataBase}images/TravelJabs Clinics Management System Image.jpg`,
@@ -212,7 +212,7 @@ export const projects = [
     description:
       "SmartKitchen was a concept developed for the Bright Ideas Competition, where I created a technology-driven solution to reduce household food waste while promoting healthy eating habits. This involved market research, product planning, business modelling, and presentation development while helping define features such as inventory management, expiry tracking, recipe recommendations, and AI-assisted meal planning. The project progressed to the finalist stage and demonstrated how technology can be used to address sustainability and health challenges.",
     tags: [
-      "Aritificial Intelligence",
+      "Artificial Intelligence",
       "Entrepreneurship",
       "Innovation",
       "Business Analysis",
@@ -234,8 +234,8 @@ export const projects = [
     description:
       "This project involved designing and simulating a secure computer network using Cisco Packet Tracer. I configured network devices, implemented IP addressing schemes, applied subnetting techniques, and tested connectivity across multiple network segments. The completed design demonstrated an understanding of networking principles and secure network architecture.",
     tags: ["Cisco Packet Tracer", "Network Design", "Subnetting", "IP Addresses"],
-    image: `${dataBase}images/Network Assigment Image.jpg`,
-    link: `${dataBase}images/Network Assigment Image.jpg`,
+    image: `${dataBase}images/Network Assignment Image.jpg`,
+    link: `${dataBase}images/Network Assignment Image.jpg`,
     links: [
       { label: "Documentation", href: networkdesignReportLink, type: "document" },
       { label: "Packet Tracer", href: networkdesignPacketTracerLink, type: "download" },
@@ -295,7 +295,7 @@ export const projects = [
     title: "Card Games with Basic Images",
     description:
       "This project involved developing a collection of card games using Java while incorporating graphical assets and object-oriented programming concepts. I designed the game logic, implemented user interaction features, and integrated images to enhance the user experience. The completed project strengthened my understanding of software design and reusable code structures.",
-    tags: ["Java", "Object-Orientated Programming", "Visual Studio Code", "Game Development"],
+    tags: ["Java", "Object-Oriented Programming", "Visual Studio Code", "Game Development"],
     image: `${dataBase}images/Programming 1 Card Games Basic Images Image.jpg`,
     link: `${dataBase}images/Programming 1 Card Games Basic Images Image.jpg`,
     links: [
