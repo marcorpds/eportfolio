@@ -8,11 +8,16 @@ Personal ePortfolio built with React, JSX, and SCSS.
 npm install
 npm run dev
 ```
-
 Open `http://localhost:5173/eportfolio/`.
 
 ## Build
 
 ```bash
 npm run build
+```
+
+## Deploy to github
+
+```bash
+npm run deploy
 ```
