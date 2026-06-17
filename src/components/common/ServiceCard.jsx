@@ -1,8 +1,9 @@
-import { FaCode, FaDatabase, FaDiagramProject } from 'react-icons/fa6';
+import { FaCode, FaDatabase, FaDiagramProject, FaGears } from 'react-icons/fa6';
 
 const serviceIcons = {
   code: FaCode,
   database: FaDatabase,
+  engineering: FaGears,
   project: FaDiagramProject,
 };
 

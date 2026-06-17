@@ -69,23 +69,17 @@
     min-height: 12rem;
   }
 
-  .timeline-card,
   .contact-panel {
     grid-template-columns: 1fr;
   }
 
   .timeline-card {
-    align-items: stretch;
+    grid-template-columns: 4.3rem minmax(0, 1fr);
     min-height: 14rem;
   }
 
-  .timeline .timeline-card > div:not(.timeline-actions) {
-    min-height: 8rem;
-  }
-
-  .timeline-actions {
-    min-height: 0;
-    align-items: flex-start;
+  .timeline .timeline-copy {
+    min-height: 100%;
   }
 
   .contact-actions {
@@ -146,6 +140,8 @@
   }
 
   .timeline-card {
+    grid-template-columns: 3.7rem minmax(0, 1fr);
+    gap: 0.7rem;
     padding-right: 0.8rem;
   }
 

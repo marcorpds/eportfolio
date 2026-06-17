@@ -15,10 +15,10 @@
   .timeline-card {
     position: relative;
     display: grid;
-    grid-template-columns: 9rem minmax(0, 1fr) auto;
-    gap: 1rem;
-    align-items: start;
-    min-height: 5rem;
+    grid-template-columns: 4.6rem minmax(0, 1fr);
+    gap: 0.85rem;
+    align-items: stretch;
+    min-height: 8rem;
     padding: 1.15rem 1rem 1.15rem 2.2rem;
     border: 1px solid $line-soft;
     color: inherit;
@@ -60,6 +60,39 @@
     font-size: 0.86rem;
   }
 
+  .timeline-date {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    align-self: start;
+    color: $gold-bright;
+    font-size: 0.79rem;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    span {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+    }
+  }
+
+  .timeline-date__dash {
+    color: $muted;
+  }
+
+  .timeline-copy {
+    display: flex;
+    min-width: 0;
+    min-height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+
+    strong {
+      margin-bottom: 0.35rem;
+    }
+  }
+
   h4,
   p {
     margin: 0;
@@ -69,11 +102,10 @@
     margin-bottom: 0.2rem;
   }
 
-  .timeline-card > div:not(.timeline-actions) {
-    display: flex;
-    min-height: 100%;
-    flex-direction: column;
-    align-items: flex-start;
+  .timeline-description {
+    max-width: 44rem;
+    margin-top: 0.55rem;
+    line-height: 1.55;
   }
 
   .tag-list {
@@ -83,19 +115,10 @@
   }
 }
 
-.timeline-actions {
-  display: flex;
-  min-height: 100%;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
 .timeline-pin {
   position: absolute;
   left: 0.68rem;
-  top: 1.45rem;
+  top: 2.6rem;
   width: 0.7rem;
   aspect-ratio: 1;
   border-radius: 50%;

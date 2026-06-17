@@ -18,7 +18,7 @@ export default function AboutSection() {
       </p>
 
       <div className="section-divider" />
-      <h3>Skills</h3>
+      <h3>Technical Skills</h3>
       <SkillTicker skills={skills} />
 
       <div className="section-divider" />
