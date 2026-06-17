@@ -23,6 +23,8 @@
 
 .skill-ticker {
   position: relative;
+  display: grid;
+  gap: 0.65rem;
   width: min(44rem, 100%);
   margin: 0 auto;
   overflow: hidden;
@@ -45,6 +47,10 @@
   }
 }
 
+.skill-ticker__track--reverse {
+  animation-name: skill-scroll-reverse;
+}
+
 @keyframes skill-scroll {
   from {
     transform: translateX(0);
@@ -52,6 +58,16 @@
 
   to {
     transform: translateX(calc(-50% - 0.25rem));
+  }
+}
+
+@keyframes skill-scroll-reverse {
+  from {
+    transform: translateX(calc(-50% - 0.25rem));
+  }
+
+  to {
+    transform: translateX(0);
   }
 }
 

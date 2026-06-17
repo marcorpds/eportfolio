@@ -1,7 +1,7 @@
 import ProjectPreview from '../components/common/ProjectPreview.jsx';
 import ServiceCard from '../components/common/ServiceCard.jsx';
 import SkillTicker from '../components/common/SkillTicker.jsx';
-import { projects, services, skills } from '../data/portfolioData.js';
+import { projects, services, skillRows } from '../data/portfolioData.js';
 
 const featuredProjects = projects.filter((project) => project.featured).slice(0, 3);
 
@@ -19,7 +19,7 @@ export default function AboutSection() {
 
       <div className="section-divider" />
       <h3>Technical Skills</h3>
-      <SkillTicker skills={skills} />
+      <SkillTicker rows={skillRows} />
 
       <div className="section-divider" />
       <h3>What I Do</h3>

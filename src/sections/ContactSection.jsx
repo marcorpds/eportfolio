@@ -8,7 +8,7 @@ export default function ContactSection() {
       </div>
       <div className="contact-actions">
         <a className="button button--primary" href="mailto:marcoruisilva@gmail.com">Contact</a>
-        <a className="button" href="#about">Download CV</a>
+        <a className="button" href={`${import.meta.env.BASE_URL}documents/Marco Silva CV.pdf`}>Download CV</a>
       </div>
     </section>
   );
